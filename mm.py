@@ -36,7 +36,7 @@ def makedir(title):
 
 def downloadPic(title, allPage, htmlMark):
     for number in range(1,int(allPage)+1):
-        picUrl = f"https://img1.mmmw.net/pic/{htmlMark}/{number}.jpg"
+        picUrl = f"https://img1.nthjjz.com/pic/{htmlMark}/{number}.jpg"
         pic = getHtml(picUrl)
         with open(f"{title}/{number}.jpg", "wb+") as f:
             f.write(pic.content)
